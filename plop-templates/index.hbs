@@ -1,0 +1,7 @@
+// src/{{folderPath}}/index.js
+// Auto-generated index file for {{folderPath}}
+
+// Export all modules in this folder
+{{#each files}}
+export { default as {{pascalCase this}} } from './{{this}}';
+{{/each}}

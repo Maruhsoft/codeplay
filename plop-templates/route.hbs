@@ -1,0 +1,14 @@
+// src/backend/routes/{{camelCase name}}Routes.js
+import express from 'express';
+import * as {{camelCase name}}Controller from '../controllers/{{camelCase name}}Controller.js';
+
+const router = express.Router();
+
+// CRUD routes for {{name}}
+router.get('/', {{camelCase name}}Controller.getAll{{pascalCase name}}s);
+router.get('/:id', {{camelCase name}}Controller.get{{pascalCase name}}ById);
+router.post('/', {{camelCase name}}Controller.create{{pascalCase name}});
+router.put('/:id', {{camelCase name}}Controller.update{{pascalCase name}});
+router.delete('/:id', {{camelCase name}}Controller.delete{{pascalCase name}});
+
+export default router;

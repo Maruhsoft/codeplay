@@ -1,0 +1,7 @@
+// src/controllers/{{pascalCase name}}Controller.js
+import {{camelCase name}}Service from '../services/{{camelCase name}}Service.js';
+
+export const getAll = async (req, res) => {
+  const data = await {{camelCase name}}Service.getAll();
+  res.json(data);
+};

@@ -1,0 +1,12 @@
+// src/hooks/use{{pascalCase name}}.js
+import { useState, useEffect } from 'react';
+
+export const use{{pascalCase name}} = (initialValue) => {
+  const [state, setState] = useState(initialValue);
+
+  useEffect(() => {
+    // Add side effects or API calls
+  }, []);
+
+  return [state, setState];
+};

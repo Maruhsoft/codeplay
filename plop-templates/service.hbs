@@ -1,0 +1,11 @@
+// src/services/{{camelCase name}}Service.js
+import axios from 'axios';
+const BASE_URL = 'http://localhost:4000/{{name}}';
+
+export default {
+  getAll: async () => (await axios.get(BASE_URL)).data,
+  getById: async (id) => (await axios.get(`${BASE_URL}/${id}`)).data,
+  create: async (payload) => (await axios.post(BASE_URL, payload)).data,
+  update: async (id, payload) => (await axios.put(`${BASE_URL}/${id}`, payload)).data,
+  delete: async (id) => (await axios.delete(`${BASE_URL}/${id}`)).data
+};
