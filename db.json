@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Maruh Phronesis Vulcan Akporowho",
+      "username": "maruhvulcan",
+      "email": "maruh@example.com",
+      "role": "admin",
+      "createdAt": "2025-11-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "username": "janedoe",
+      "email": "jane@example.com",
+      "role": "user",
+      "createdAt": "2025-11-02T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "John Smith",
+      "username": "johnsmith",
+      "email": "john@example.com",
+      "role": "user",
+      "createdAt": "2025-11-03T09:15:00Z"
+    }
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Understanding the Request-Response Cycle",
+      "content": "This post explains how HTTP requests and responses flow between frontend and backend using REST APIs.",
+      "tags": ["HTTP", "API", "Frontend", "Backend"],
+      "createdAt": "2025-11-03T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "Building REST APIs with Express.js",
+      "content": "A beginner-friendly guide to building APIs using Node.js and Express.",
+      "tags": ["Node.js", "Express", "Backend"],
+      "createdAt": "2025-11-04T09:30:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "title": "Frontend to Backend Communication Explained",
+      "content": "Learn how the browser, HTTP methods, and API endpoints interact to deliver data seamlessly.",
+      "tags": ["Frontend", "Networking", "JavaScript"],
+      "createdAt": "2025-11-05T17:20:00Z"
+    }
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "content": "Excellent explanation — really helped me understand middleware flow!",
+      "createdAt": "2025-11-05T20:10:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "userId": 1,
+      "content": "Nicely written. Don’t forget to mention error-handling middleware next time.",
+      "createdAt": "2025-11-06T11:45:00Z"
+    },
+    {
+      "id": 3,
+      "postId": 3,
+      "userId": 3,
+      "content": "This clarified client-server interactions brilliantly.",
+      "createdAt": "2025-11-07T16:25:00Z"
+    }
+  ]
+}
